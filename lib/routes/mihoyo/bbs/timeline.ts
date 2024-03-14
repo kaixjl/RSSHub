@@ -10,7 +10,12 @@ export const route: Route = {
     example: '/mihoyo/bbs/timeline',
     parameters: {},
     features: {
-        requireConfig: true,
+        requireConfig: [
+            {
+                name: 'MIHOYO_COOKIE',
+                description: '',
+            },
+        ],
         requirePuppeteer: false,
         antiCrawler: false,
         supportBT: false,
@@ -62,5 +67,5 @@ async function handler(ctx) {
         link,
         item: items,
     };
-    ctx.set('data', data);
+    return data;
 }
