@@ -1248,7 +1248,7 @@
     "_name": "AP News",
     ".": [
       {
-        "title": "RSS",
+        "title": "News",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
           "/:rss"
@@ -13531,7 +13531,7 @@
     ]
   },
   "reuters.com": {
-    "_name": "Reuters 路透社",
+    "_name": "Reuters",
     ".": [
       {
         "title": "Category/Topic/Author",
